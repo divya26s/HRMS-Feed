@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, ListGroup, Badge } from 'react-bootstrap';
+import { FaCalendar } from 'react-icons/fa' ;
 import './RightPanel.css';
 
 const RightPanel = () => {
@@ -64,7 +65,8 @@ const RightPanel = () => {
       {/* Upcoming Events */}
       <Card>
         <Card.Body>
-          <h6>Upcoming Events</h6>
+         
+          <h6><FaCalendar className="m-2"/>Upcoming Events</h6>
           <ListGroup variant="flush">
             <ListGroup.Item>
               <div className="d-flex justify-content-between">
