@@ -1,13 +1,13 @@
 import React from 'react';
 import { Card, ListGroup, Badge } from 'react-bootstrap';
-import { FaBirthdayCake, FaCalendar } from 'react-icons/fa';
+import { FaBirthdayCake, FaCalendar, FaUser } from 'react-icons/fa';
 import './RightPanel.css';
 
 const RightPanel = () => {
   return (
     <div className="right-panel p-3">
       {/* Points Section */}
-      <Card className="mb-4 shadow-sm border-0">
+      <Card className="mb-3 shadow-sm border-0">
         <Card.Body>
           <div className="d-flex justify-content-between align-items-center my-2">
             <h6 className="mb-0 fw-semibold">Your Points</h6>
@@ -48,7 +48,7 @@ const RightPanel = () => {
           <ListGroup variant="flush">
             <ListGroup.Item className="d-flex justify-content-between align-items-center">
               <div>
-                <strong>Weekly Review Meeting</strong>
+              <FaUser size={28} className="me-2" /> <strong>Weekly Review Meeting</strong>
                 <div className="text-muted small">11:00 am - 12:00 pm</div>
               </div>
               <Badge bg="light" text="dark">+6 attending</Badge>
