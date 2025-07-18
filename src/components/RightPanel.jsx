@@ -1,18 +1,19 @@
 import React from 'react';
 import { Card, ListGroup, Badge } from 'react-bootstrap';
+import { FaBirthdayCake, FaCalendar } from 'react-icons/fa';
 import './RightPanel.css';
 
 const RightPanel = () => {
   return (
-    <div className="right-panel">
+    <div className="right-panel p-3">
       {/* Points Section */}
-      <Card className="mb-3">
+      <Card className="mb-4 shadow-sm border-0">
         <Card.Body>
-          <div className="d-flex justify-content-between align-items-center">
-            <span>Your Points</span>
-            <Badge bg="primary" pill>1284</Badge>
+          <div className="d-flex justify-content-between align-items-center my-2">
+            <h6 className="mb-0 fw-semibold">Your Points</h6>
+           <span className="Badge bg-primary rounded-pill fs-3 px-4 py-2"style={{ color: 'white'}}>1284</span>
           </div>
-          <div className="d-flex mt-2">
+          <div className="d-flex mt-3">
             <button className="btn btn-sm btn-outline-primary me-2">SEND</button>
             <button className="btn btn-sm btn-outline-success">REDEEM</button>
           </div>
@@ -29,7 +30,7 @@ const RightPanel = () => {
                 {day}
               </div>
             ))}
-            <div className="calendar-event">Birthdays</div>
+            <div className="calendar-event"> < FaBirthdayCake className="m-1"/>Birthdays</div>
             <div className="calendar-event empty"></div>
             <div className="calendar-event empty"></div>
             <div className="calendar-event empty"></div>
@@ -64,7 +65,7 @@ const RightPanel = () => {
       {/* Upcoming Events */}
       <Card>
         <Card.Body>
-          <h6>Upcoming Events</h6>
+          <h6> <FaCalendar className="m-2"/>Upcoming Events</h6>
           <ListGroup variant="flush">
             <ListGroup.Item>
               <div className="d-flex justify-content-between">
